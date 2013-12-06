@@ -13,5 +13,4 @@ if RbConfig::MAKEFILE_CONFIG['CC'] =~ /gcc/
   $CFLAGS += ' -gdwarf-2 -g3 -O0' if ENV['debug']
 end
 
-dir_config("ruby")
-create_makefile('byebug/byebug')
+create_makefile('byebug')
